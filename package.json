@@ -1,0 +1,25 @@
+{
+  "name": "drf-fanzone",
+  "version": "1.0.0",
+  "description": "social media app for football fans",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WelshDan/drf-fanzone.git"
+  },
+  "keywords": [
+    "fanzone",
+    "football",
+    "socialmedia",
+    "messages"
+  ],
+  "author": "dan roberts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WelshDan/drf-fanzone/issues"
+  },
+  "homepage": "https://github.com/WelshDan/drf-fanzone#readme"
+}
