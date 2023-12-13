@@ -60,7 +60,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = [
     '8000-welshdan-drf-fanzone-e8xy0la70m.us2.codeanyapp.com',
     'localhost',
-    'https://drf-fanzone-dfbf06e05b90.herokuapp.com/',
+    'drf-fanzone-dfbf06e05b90.herokuapp.com',
     ]
 
 
