@@ -58,7 +58,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-welshdan-drf-fanzone-e8xy0la70m.us2.codeanyapp.com',
+    os.environ.get('ALLOWED_HOST'),
     'localhost',
     'drf-fanzone-dfbf06e05b90.herokuapp.com',
     ]
