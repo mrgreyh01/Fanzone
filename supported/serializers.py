@@ -1,6 +1,6 @@
 from django.db import IntegrityError
 from rest_framework import serializers
-from .models import Supporter
+from .models import Support
 
 
 class SupporterSerializer(serializers.ModelSerializer):
@@ -8,7 +8,7 @@ class SupporterSerializer(serializers.ModelSerializer):
     supported_team = serializers.ReadOnlyField(source='supported.team')
 
     class Meta:
-        model = Supporter
+        model = Support
         fields = [
             'id', 'owner', 'supported_team',
         ]
