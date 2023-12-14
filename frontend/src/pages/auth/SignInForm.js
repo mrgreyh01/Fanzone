@@ -35,10 +35,10 @@ function SignInForm() {
         event.preventDefault();
         try {
             const {data} = await axios.post("/dj-rest-auth/login/", signInData);
-            setCurrentUser(data.user)
+            setCurrentUser(data.user);
             history.goBack();
         } catch(err){
-            setErrors(err.response?.data)
+            setErrors(err.response?.data);
         }
     };
 
@@ -80,7 +80,7 @@ function SignInForm() {
                             type="password"
                             placeholder="Password"
                             name="password"
-                            ClassName={styles.Input}
+                            className={styles.Input}
                             value={password}
                             onChange={handleChange}
                         />

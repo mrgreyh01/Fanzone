@@ -74,5 +74,5 @@ export const CurrentUserProvider = ({ children }) => {
                 {children}
             </SetCurrentUserContext.Provider>
         </CurrentUserContext.Provider>
-    )
+    );
 };

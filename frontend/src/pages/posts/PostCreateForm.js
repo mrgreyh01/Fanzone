@@ -51,7 +51,7 @@ function PostCreateForm() {
     };
 
     const handleSubmit = async (event) => {
-        event.preventDefault()
+        event.preventDefault();
         const formData = new FormData();
 
         formData.append("title", title);
@@ -102,8 +102,8 @@ function PostCreateForm() {
                 </Alert>
             ))}
             <Button
-            className={`${btnStyles.Button} ${btnStyles.Blue}`}
-            onClick={() => history.goBack()}
+                className={`${btnStyles.Button} ${btnStyles.Blue}`}
+                onClick={() => history.goBack()}
             >
             cancel
             </Button>
