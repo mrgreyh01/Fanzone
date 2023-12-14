@@ -41,7 +41,7 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
                     <i className="fas fa-trash-alt" />
                 </Dropdown.Item>
             </Dropdown.Menu>
-        </Dropdown>,
+        </Dropdown>
     );
 };
 
@@ -75,5 +75,5 @@ export function ProfileEditDropdown({ id }) {
         </Dropdown.Menu>
       </Dropdown>
     );
-  }
+};
   
