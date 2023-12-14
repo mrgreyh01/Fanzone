@@ -44,3 +44,16 @@
 .SignUpCol {
     height: 375px;
 }
+
+.div .SignInCol {
+    display: inline-block;
+}
+
+.SignInCol img {
+    max-width: fill-available;
+    max-height: 300px;
+}
+.SignUpCol img {
+    max-width: fill-available;
+    max-width: 400px;
+}
