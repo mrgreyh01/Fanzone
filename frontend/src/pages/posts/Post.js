@@ -31,17 +31,17 @@ const Post = (props) => {
 
     const handleEdit = () => {
         history.push(`/posts/${id}/edit`);
-    }
+    };
 
     const handleLike = async () => {
         try {
-            const { data } = await axiosRes.post("/likes/", {post: id });
+            const { data } = await axiosRes.post("/likes/", { post: id });
             setPosts((prevPosts) => ({
                 ...prevPosts,
                 results: prevPosts.results.map((post) => {
                     return post.id === id
-                    ? { ...post, likes_count: post.likes_count + 1, like_id: data.id }
-                    : post;
+                        ? { ...post, likes_count: post.likes_count + 1, like_id: data.id }
+                        : post;
                 }),
             }));
         } catch (err) {
@@ -56,8 +56,8 @@ const Post = (props) => {
                 ...prevPosts,
                 results: prevPosts.results.map((post) => {
                     return post.id === id
-                    ? { ...post, likes_count: post.likes_count - 1, like_id: null }
-                    : post;
+                        ? { ...post, likes_count: post.likes_count - 1, like_id: null }
+                        : post;
                 }),
             }));
         } catch (err) {

@@ -1,39 +1,83 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Fanzone
+(insert Fanzone logo)
 
-Welcome,
+### A social media site for football fans
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+(insert Fanzone fanicon)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+##### The goal with Fanzone
+The goal with Fanzone was to create a simple social media site with the usual
+post, comment and like functions but with the twist of being able to support a
+specific team to also see a feed with only posts about that certain team.
 
-## Codeanywhere Reminders
+### Click here to view 
+------
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Table of contents
 
-`python3 -m http.server`
+1. Planning
+2. App Layout
+3. Used Technologies
+4. Installation
+5. Usage
+6. Testing issues
+   Testing
+   Bugs
+7. Credits
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+----
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## 1. Planning
 
-`http_server`
+## 2. App Layout
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## 3. Used Technologies
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## 4. Installation
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## 5. Usage
 
-To log into the Heroku toolbelt CLI:
+## 6. Testing Issues
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## 7. Credits, Help and Copyright
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Credits
 
----
+The following sources have been used to provide either a direct influence or
+as a source of inspiration:
+- The lessons, tutorials and course literature of Code Institute's Advanced
+  Front End section, particularly including the 'Moments' and Django REST
+  Framework modules.
 
-Happy coding!
+
+#### Help
+
+The following sources have been directly involved in helping to solve problems
+issues with the development of Fanzone:
+- Tutor Support provided by Code Institute
+- My Mentor Akshat Garg
+- Slack, the business messaging app, and its users, for help with issues
+  including lines too long errors and cookie refresh errors
+- React documentation and tutorials
+- React bootstrap documentation and tutorials
+
+#### Copyright
+
+The following parts of the app have come directly from other sources:
+- 
+
+
+The following images are free to use, their creators are credited here:
+
+From pixabay.com:
+- From user [jplenio]
+(https://cdn.pixabay.com/photo/2018/05/15/23/02/football-stadium-3404535_1280.jpg)
+- From user [Pexels]
+- (https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_1280.jpg)
+
+From freepix.com:
+
+- [referee-stern](https://www.freepik.com/free-photo/referee-gives-directions-with-gestures-football-soccer-players-while-gaming-isolated-white-studio-background_17245633.htm>)
+- [test-post-pic1](https://www.freepik.com/free-ai-image/view-soccer-ball-field_96363744.htm#query=football&position=4&from_view=search&track=sph&uuid=8f121708-efee-463a-862d-2ec94232fddb)
+
+## 
