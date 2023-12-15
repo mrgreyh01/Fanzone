@@ -30,6 +30,12 @@ specific team to also see a feed with only posts about that certain team.
 
 ## 1. Planning
 
+### Functionality
+
+The aim of the website was to use a standard modern design using icon to
+simplify and with as few pages as possible.
+Users can perform the CRUD functions of create, read, update and delete in many
+parts of the website.
 
 
 -----
@@ -38,15 +44,32 @@ specific team to also see a feed with only posts about that certain team.
 ### Design
 
 
+
+
+#### Data Model
+
+I started from a few drawings of a flowchart and by using the free flowchart
+maker from the website [Canva](https://www.canva.com/online-whiteboard/flowcharts/)
+the design was set.
+![Screenshot of a flowchart detailing the pages linked in the fanzone app](/readme-images/Fanzone%20Flowchart.png)
+
 ### Icons and images
+
+Fanzone Icon designed in Microsoft Paint
+[Icon]()
+![Screenshot of the green favicon logo](/readme-images/logo.jpg)
 
 #### Font and colour schemes
 
 ##### Font
 
-My two main choices of font were the Oxygen Mono and the Open Sans fonts:
+My two main choices of font were:
 
-(Insert font-oxygen-mono image) (insert font-open-sans image)
+The Oxygen Mono
+![Screenshot of example text in Oxygen Mono font](/readme-images/font-oxygen-mono.jpg)
+
+and the Open Sans fonts
+![Screenshot of example text in Open Sans font](/readme-images/font-open-sans.jpg)
 
 I chose the Oxygen Mono font as I felt it was simple and clean but a little
 relaxed at the same time.
@@ -63,8 +86,11 @@ and so to feel like the background was similar to a football pitch.
 There were a few other colours involved during the planning process.
 
 On deciding on the colour green I then chose between a few shades of green.
+![Screenshot of a colour wheel with the color #4fb076](/readme-images/color-4fb076.jpg)
 
-(insert 4fb076) (insert b5e61d) (insert 4ff10e)
+![Screenshot of a colour wheel with the color #4ff10e](/readme-images/color-4ff10e.jpg)
+
+![Screenshot of a colour wheel with the color #b5e61d](/readme-images/color-b5e61d.jpg)
 
 I chose this shade of green felt energetic. #B5E61D
 
@@ -124,7 +150,28 @@ Search: fas fa-search
 -----
 ## 5. Usage
 
+**Starting up the app from IDE**
 
+Starting of the app required two terminals open
+1. Starting Django from the backend
+2. Starting React js from the frontend.
+
+To start the app, I started with these codes in terminal 1:
+
+To change directory to Fanzone/frontend
+```
+cd frontend
+```
+
+Then to start React
+```
+npm start
+```
+
+Thento start Django in terminal 1:
+```
+python manage.py runserver
+```
 
 -----
 ## 6. Testing Issues
@@ -156,15 +203,25 @@ issues with the development of Fanzone:
 
 ### Copyright
 
-The following images are free to use, their creators are credited here:
+Thanks to the following image creators for their free images:
 
 From pixabay.com:
-- From user [jplenio](https://cdn.pixabay.com/photo/2018/05/15/23/02/football-stadium-3404535_1280.jpg)
-- From user [Pexels](https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_1280.jpg)
+- jplenio
+- Pexels
+- Bessi
+- artsysolomon
+- Leroy_Skalstad
+- Engin_Akyurt
+- planet_fox
+- 134213
+- Ralphs_Fotos
+- qimono
+- Mohamed_hassan
 
 From freepix.com:
 
-- [referee-stern](https://www.freepik.com/free-photo/referee-gives-directions-with-gestures-football-soccer-players-while-gaming-isolated-white-studio-background_17245633.htm>)
-- [test-post-pic1](https://www.freepik.com/free-ai-image/view-soccer-ball-field_96363744.htm#query=football&position=4&from_view=search&track=sph&uuid=8f121708-efee-463a-862d-2ec94232fddb)
-
+- master1305
+- Freepik
+- rawpixel.com
 ## 
+
