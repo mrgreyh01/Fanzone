@@ -1,12 +1,12 @@
-# Fanzone
-(insert Fanzone logo)
+# Fanzone  ![fanzone favicon](./frontend/public/favicon-16x16.png)
+
 ![fanzone logo](./frontend/src/assets/logo.png)
 
 ### A social media site for football fans
-![fanzone favicon](./frontend/public/favicon-16x16.png)
 
+-----
 
-##### The goal with Fanzone
+### The goal with Fanzone
 The goal with Fanzone was to create a simple social media site with the usual
 post, comment and like functions but with the twist of being able to support a
 specific team to also see a feed with only posts about that certain team.
@@ -51,12 +51,11 @@ parts of the website.
 I started from a few drawings of a flowchart and by using the free flowchart
 maker from the website [Canva](https://www.canva.com/online-whiteboard/flowcharts/)
 the design was set.
-![Screenshot of a flowchart detailing the pages linked in the fanzone app](/readme-images/Fanzone%20Flowchart.png)
+![Screenshot of a flowchart detailing the pages linked in the fanzone app](/readme-images/Fanzone%20Flowchart.png){width 500}
 
 ### Icons and images
 
-Fanzone Icon designed in Microsoft Paint
-[Icon]()
+Fanzone Icon designed in Microsoft Paint:
 ![Screenshot of the green favicon logo](/readme-images/logo.jpg)
 
 #### Font and colour schemes
@@ -66,10 +65,10 @@ Fanzone Icon designed in Microsoft Paint
 My two main choices of font were:
 
 The Oxygen Mono
-![Screenshot of example text in Oxygen Mono font](/readme-images/font-oxygen-mono.jpg)
+![Screenshot of example text in Oxygen Mono font](/readme-images/font-oxygen-mono.jpg){width 300}
 
 and the Open Sans fonts
-![Screenshot of example text in Open Sans font](/readme-images/font-open-sans.jpg)
+![Screenshot of example text in Open Sans font](/readme-images/font-open-sans.jpg){width 300}
 
 I chose the Oxygen Mono font as I felt it was simple and clean but a little
 relaxed at the same time.
@@ -86,17 +85,17 @@ and so to feel like the background was similar to a football pitch.
 There were a few other colours involved during the planning process.
 
 On deciding on the colour green I then chose between a few shades of green.
-![Screenshot of a colour wheel with the color #4fb076](/readme-images/color-4fb076.jpg)
+![Screenshot of a colour wheel with the color #4fb076](/readme-images/color-4fb076.jpg){width 300}
 
-![Screenshot of a colour wheel with the color #4ff10e](/readme-images/color-4ff10e.jpg)
+![Screenshot of a colour wheel with the color #4ff10e](/readme-images/color-4ff10e.jpg){width 300}
 
-![Screenshot of a colour wheel with the color #b5e61d](/readme-images/color-b5e61d.jpg)
+![Screenshot of a colour wheel with the color #b5e61d](/readme-images/color-b5e61d.jpg){width 300}
 
 I chose this shade of green felt energetic. #B5E61D
 
 #### Fanzone Logo
 
-![fanzone logo](./frontend/src/assets/logo.png)
+![fanzone logo](/readme-images/logo.jpg)
 
 The Favicon logo was designed by myself using Microsoft Paint and using a
 ball image shrunk down.
@@ -107,7 +106,7 @@ and I felt the logo was more appealing with white text as opposed to black text.
 
 #### Fanzone Favicon
 
-![fanzone favicon](./frontend/public/favicon-16x16.png)
+![fanzone favicon](/readme-images/favicon-16x16.png){width 50}
 
 The Favicon was created using [favicon generator](https://favicon.io/favicon-generator/)
 
@@ -116,26 +115,22 @@ The green is the same used in the logo and also with white text.
 
 #### FontAwesome Icons used as links
 
-| Link      | Logged out? | Logged in? | Icon                 |
-| --------- | ----------- | ---------- | -------------------- |
-| Home      |      X      |            | fa-solid fa-house    |
-| Home      |             |     X      | fa-solid fa-house    |
-| Sign Up   |      X      |            | fas fa-user-plus     |
-| Sign In   |      X      |            | fas fa-sign-in-alt   |
-| Add Post  |             |     X      | fa-solid fa-plus     |
-| Supported |             |     X      | fa-solid fa-heart    |
-| Goals     |             |     X      | fa-regular fa-futbol |
-| Sign Out  |             |     X      | fas fa-sign-out-alt  |
-| Profile   |             |     X      | fa-solid fa-shirt    |
+![fontAwesome house icon](/readme-images/house-solid.svg) Home
+![fontAwesome user plus icon](/readme-images/user-plus-solid.svg) Sign Up
+![fontAwesome sign in icon](/readme-images/sign-in-alt-solid.svg) Sign In
+![fontAwesome plus icon](/readme-images/user-plus-solid.svg) Add Post
+![fontAwesome heart icon](/readme-images/heart-solid.svg) Supported
+![fontAwesome ball icon](/readme-images/futbol-solid.svg) Likes
+![fontAwesome sign out icon](/readme-images/sign-out-alt-solid.svg) Sign Out
 
 
 #### Other FontAwesome icons
 
-Comments: far fa-comments
-Edit: fas fa-edit
-Change username: far fa-id-card
-Change password: fas fa-key
-Search: fas fa-search
+![fontAwesome comments icon](/readme-images/comments-solid.svg) Comments
+![fontAwesome edit icon](/readme-images/edit-solid.svg) Edit
+![fontAwesome id card icon](/readme-images/id-card-solid.svg) Change username
+![fontAwesome key icon](/readme-images/key-solid.svg) Change password
+![fontAwesome search icon](/readme-images/search-solid.svg) Search
 
 -----
 ## 3. Used Technologies
@@ -168,7 +163,7 @@ Then to start React
 npm start
 ```
 
-Thento start Django in terminal 1:
+Then to start Django in terminal 1:
 ```
 python manage.py runserver
 ```
