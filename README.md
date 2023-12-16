@@ -7,12 +7,14 @@
 -----
 
 ### The goal with Fanzone
+
 The goal with Fanzone was to create a simple social media site with the usual
 post, comment and like functions but with the twist of being able to support a
 specific team to also see a feed with only posts about that certain team.
 
 ### Click here to view (link to app)
-------
+
+-----
 
 ## Table of contents
 
@@ -24,7 +26,8 @@ specific team to also see a feed with only posts about that certain team.
 6. Testing issues
    Testing
    Bugs
-7. Credits
+7. Problems and incompletions
+8. Credits
 
 -----
 
@@ -37,14 +40,22 @@ simplify and with as few pages as possible.
 Users can perform the CRUD functions of create, read, update and delete in many
 parts of the website.
 
+### User Stories
+
+There were 33 User Stories in total:
+
+- 25 were completed
+- 2 were removed from the planning
+- 3 remain incomplete
+- 3 were removed due to time constraints (see section 7)
+
+![Screenshot of a the Github project overview with the list of User Stories](/readme-images/)
 
 -----
+
 ## 2. App Layout
 
 ### Design
-
-
-
 
 #### Data Model
 
@@ -52,7 +63,7 @@ I started from a few drawings of a flowchart and by using the free flowchart
 maker from the website [Canva](https://www.canva.com/online-whiteboard/flowcharts/)
 the design was set.
 
-![Screenshot of a flowchart detailing the pages linked in the fanzone app](/readme-images/fanzone-flowchart.png)
+![Screenshot of a flowchart detailing the pages linked in the fanzone app](/readme-images/)
 
 ### Icons and images
 
@@ -80,7 +91,6 @@ relaxed at the same time.
 Throughout the app I have used Oxygen Mono as the chosen font and have the
 sans-serif as the default backup font.
 
-
 #### Colour
 
 I chose the colour green as the dominant colour to represent the colour of grass
@@ -94,9 +104,9 @@ On deciding on the colour green I then chose between a few shades of green.
 
 ![Screenshot of a colour wheel with the color #4ff10e](/readme-images/4ff10e.jpg)
 
-![Screenshot of a colour wheel with the color #b5e61d](/readme-images/b5e61d.jpg)
-
 I chose this shade of green felt energetic. #B5E61D
+
+![Screenshot of a colour wheel with the color #b5e61d](/readme-images/b5e61d.jpg)
 
 #### Fanzone Logo
 
@@ -108,7 +118,6 @@ ball image shrunk down.
 I wanted to keep the theme of green and thought the brighter green was energetic
 and I felt the logo was more appealing with white text as opposed to black text.
 
-
 #### Fanzone Favicon
 
 ![fanzone favicon](/readme-images/favicon-16x16.png)
@@ -116,7 +125,6 @@ and I felt the logo was more appealing with white text as opposed to black text.
 The Favicon was created using [favicon generator](https://favicon.io/favicon-generator/)
 
 The green is the same used in the logo and also with white text.
-
 
 #### FontAwesome Icons used as links
 
@@ -128,7 +136,6 @@ The green is the same used in the logo and also with white text.
 ![fontAwesome ball icon](/readme-images/futbol-solid.svg) Likes
 ![fontAwesome sign out icon](/readme-images/sign-out-alt-solid.svg) Sign Out
 
-
 #### Other FontAwesome icons
 
 ![fontAwesome comments icon](/readme-images/comments-solid.svg) Comments
@@ -138,37 +145,80 @@ The green is the same used in the logo and also with white text.
 ![fontAwesome search icon](/readme-images/search-solid.svg) Search
 
 -----
+
 ## 3. Used Technologies
 
+Fanzone was created using:
 
+- Django REST Framework
+- ReactJs
+- Codeanywhere IDE
+
+With support from:
+
+- Heroku
+- Cloudinary
 
 -----
+
 ## 4. Installation
 
+#### Dependencies
 
+Frontend
 
+```
+npm install
+ES7 React/Redux/GraphQl/React-Native - (snippets) by dsznajder
+npm install react-bootstrap@1.6.3 bootstrap@4.6.0
+npm install axios
+npm install react_infinite-scroll-component
+npm install msw –save-dev (for mock API for testing)
+npm install jwt-decode (to decode json webtokens)
+```
+
+Backend
+
+```
+pip3 install 'django<4'
+django-admin startproject drf_fanzone .
+pip install django-cloudinary-storage
+Pip install Pillow
+Pip install djangorestframework
+Pip install django-filter
+pip3 install dj-rest-auth==2.1.9 (For JSON web tokens)
+pip install ‘dj-rest-auth[with_social]’
+pip install djangorestframework-simplejwt
+pip3 install dj_database_url==0.5.0 psycopg2
+pip3 install gunicorn django-cors-headers
+```
 -----
+
 ## 5. Usage
 
-**Starting up the app from IDE**
+#### Starting up the app from IDE ####
 
 Starting of the app required two terminals open
+
 1. Starting Django from the backend
 2. Starting React js from the frontend.
 
 To start the app, I started with these codes in terminal 1:
 
 To change directory to Fanzone/frontend
+
 ```
 cd frontend
 ```
 
 Then to start React
+
 ```
 npm start
 ```
 
 Then to start Django in terminal 1:
+
 ```
 python manage.py runserver
 ```
@@ -176,18 +226,60 @@ python manage.py runserver
 The website was then run using Port: 3000 which is the connected to the
 frontend.
 
+#### Test Profiles ####
+
+- TestUser1 - TestPassword1
+- Alan / AlanPassword
+- Phil / PhilPassword
+- TaraTaylor / TaraTaylor1
+- Sam / SamPassword
+
 -----
+
 ## 6. Testing Issues
 
+There was an issue with the backend at one point and so there were parts of the
+testing which remain incomplete. I also had to restart my workspace the day
+before submission which helped to create some gremlins in the system.
 
+Backend tests that were run include:
+
+- Tests can list posts
+- Test if user can create a post
+- Test if pages can be accessed when logged out
+- Test if user can see a post using post id
+- Test if user can see a post with an invalid id
+- User can see own posts
+- User cannot update a post that isn't their own
 
 -----
-## 7. Credits, Help and Copyright
+
+## Problems and incompletions
+
+#### Problems
+
+The website is slow and there are many styling issues. The website is has not
+been checked using lighthouse, for its code or its layout.
+
+
+#### Incompletions
+
+There is a major part of this website that isn't complete.
+The supported teams function is not complete and is only partially complete in
+the code.
+
+The README.md file is not complete and lacks extensive information on testing,
+website layout and descriptions, as well as how the website operates.
+
+-----
+
+## 8. Credits, Help and Copyright
 
 ### Credits
 
 The following sources have been used to provide either a direct influence or
 as a source of inspiration:
+
 - The lessons, tutorials and course literature of Code Institute's Advanced
   Front End section, particularly including the 'Moments' and Django REST
   Framework modules.
@@ -197,6 +289,7 @@ as a source of inspiration:
 
 The following sources have been directly involved in helping to solve problems
 issues with the development of Fanzone:
+
 - Tutor Support provided by Code Institute
 - My Mentor Akshat Garg
 - Slack, the business messaging app, and its users, for help with issues
@@ -209,6 +302,7 @@ issues with the development of Fanzone:
 Thanks to the following image creators for their free images:
 
 From pixabay.com:
+
 - jplenio
 - Pexels
 - Bessi
@@ -226,5 +320,5 @@ From freepix.com:
 - master1305
 - Freepik
 - rawpixel.com
-## 
 
+-----
