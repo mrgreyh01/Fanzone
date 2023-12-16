@@ -51,24 +51,28 @@ parts of the website.
 I started from a few drawings of a flowchart and by using the free flowchart
 maker from the website [Canva](https://www.canva.com/online-whiteboard/flowcharts/)
 the design was set.
-![Screenshot of a flowchart detailing the pages linked in the fanzone app](/readme-images/Fanzone%20Flowchart.png){width 500}
+
+![Screenshot of a flowchart detailing the pages linked in the fanzone app](/readme-images/fanzone-flowchart.png)
 
 ### Icons and images
 
 Fanzone Icon designed in Microsoft Paint:
+
 ![Screenshot of the green favicon logo](/readme-images/logo.jpg)
 
-#### Font and colour schemes
+### Font and colour schemes
 
-##### Font
+#### Font
 
 My two main choices of font were:
 
 The Oxygen Mono
-![Screenshot of example text in Oxygen Mono font](/readme-images/font-oxygen-mono.jpg){width 300}
+
+![Screenshot of example text in Oxygen Mono font](/readme-images/font-oxygen-mono.jpg)
 
 and the Open Sans fonts
-![Screenshot of example text in Open Sans font](/readme-images/font-open-sans.jpg){width 300}
+
+![Screenshot of example text in Open Sans font](/readme-images/font-open-sans.jpg)
 
 I chose the Oxygen Mono font as I felt it was simple and clean but a little
 relaxed at the same time.
@@ -77,7 +81,7 @@ Throughout the app I have used Oxygen Mono as the chosen font and have the
 sans-serif as the default backup font.
 
 
-##### Colour
+#### Colour
 
 I chose the colour green as the dominant colour to represent the colour of grass
 and so to feel like the background was similar to a football pitch.
@@ -85,11 +89,12 @@ and so to feel like the background was similar to a football pitch.
 There were a few other colours involved during the planning process.
 
 On deciding on the colour green I then chose between a few shades of green.
-![Screenshot of a colour wheel with the color #4fb076](/readme-images/color-4fb076.jpg){width 300}
 
-![Screenshot of a colour wheel with the color #4ff10e](/readme-images/color-4ff10e.jpg){width 300}
+![Screenshot of a colour wheel with the color #4fb076](/readme-images/4fb076.jpg)
 
-![Screenshot of a colour wheel with the color #b5e61d](/readme-images/color-b5e61d.jpg){width 300}
+![Screenshot of a colour wheel with the color #4ff10e](/readme-images/4ff10e.jpg)
+
+![Screenshot of a colour wheel with the color #b5e61d](/readme-images/b5e61d.jpg)
 
 I chose this shade of green felt energetic. #B5E61D
 
@@ -106,7 +111,7 @@ and I felt the logo was more appealing with white text as opposed to black text.
 
 #### Fanzone Favicon
 
-![fanzone favicon](/readme-images/favicon-16x16.png){width 50}
+![fanzone favicon](/readme-images/favicon-16x16.png)
 
 The Favicon was created using [favicon generator](https://favicon.io/favicon-generator/)
 
@@ -167,6 +172,9 @@ Then to start Django in terminal 1:
 ```
 python manage.py runserver
 ```
+
+The website was then run using Port: 3000 which is the connected to the
+frontend.
 
 -----
 ## 6. Testing Issues

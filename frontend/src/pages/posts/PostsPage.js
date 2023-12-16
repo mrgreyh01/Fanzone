@@ -24,6 +24,7 @@ function PostsPage({ message, filter="" }) {
     const [query, setQuery] = useState("");
 
     useEffect(() => {
+        const controller = new AbortController();
         const fetchPosts = async () => {
             try {
                 const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
@@ -39,7 +40,8 @@ function PostsPage({ message, filter="" }) {
             fetchPosts();
         }, 1000)
         return () => {
-            clearTimeout(timer)
+            clearTimeout(timer);
+            controller();
         }
     }, [filter, query, pathname]);
   

@@ -50,10 +50,10 @@
 }
 
 .SignInCol img {
-    max-width: fill-available;
+    max-width: stretch;
     max-height: 300px;
 }
 .SignUpCol img {
-    max-width: fill-available;
+    max-width: stretch;
     max-width: 400px;
 }
