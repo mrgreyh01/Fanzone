@@ -14,7 +14,6 @@ function ChooseTeam() {
                 const response = await axios.get('/supported/TeamsListView');
                 setTeam(response.data);
             } catch(err) {
-                console.log(err);
             }
         }
         fetchTeams();
