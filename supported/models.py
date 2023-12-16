@@ -21,7 +21,6 @@ class Support(models.Model):
 
 
 class TeamsList(models.Model):
-    
     teams_choices = [
         ('arsenal', 'Arsenal'),
         ('aston_villa', 'Aston Villa'),
