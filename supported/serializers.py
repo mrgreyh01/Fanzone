@@ -1,6 +1,6 @@
 from django.db import IntegrityError
 from rest_framework import serializers
-from .models import Support
+from .models import Support, TeamsList
 
 
 class SupporterSerializer(serializers.ModelSerializer):
@@ -18,3 +18,12 @@ class SupporterSerializer(serializers.ModelSerializer):
             return super().create(validated_data)
         except IntegrityError:
             raise serializers.ValidationError({'detail': 'possible duplicate'})
+
+
+class TeamsListSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = TeamsList
+        fields = [
+            'id', 'team',
+        ]
