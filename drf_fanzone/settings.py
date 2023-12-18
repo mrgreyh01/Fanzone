@@ -62,10 +62,8 @@ ALLOWED_HOSTS = [
     'localhost',
     'drf-fanzone.herokuapp.com',
     '8000-welshdan-fanzone-5jjix6r3t6.us2.codeanyapp.com',
-    'https://drf-fanzone-5jjix6r3t6.us2.herokuapp.com',
+    'https://drf-fanzone-dfbf06e05b90.herokuapp.com',
 ]
-
-
 
 # Application definition
 
