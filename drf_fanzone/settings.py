@@ -191,7 +191,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/fanzone/'
+MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = (
     'cloudinary_storage.storage.'
@@ -202,7 +203,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
 }
-MEDIA_URL = '/media/'
+
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
