@@ -61,8 +61,8 @@ ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
     'drf-fanzone.herokuapp.com',
-    '8000-welshdan-fanzone-5jjix6r3t6.us2.codeanyapp.com',
-    'https://drf-fanzone-5jjix6r3t6.us2.herokuapp.com',
+    '8000-welshdan-fanzone-3th723c2n6.us2.codeanyapp.com',
+    'https://drf-fanzone-3th723c2n6.us2.herokuapp.com',
 ]
 
 # Application definition
