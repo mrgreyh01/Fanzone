@@ -21,11 +21,11 @@ function PostsPage({ message, filter="" }) {
     const [posts,setPosts] = useState({ results: [] });
     const [hasLoaded, setHasLoaded] = useState(false);
     const { pathname } = useLocation();
-    const currentUser = useCurrentUser();
-
     const [query, setQuery] = useState("");
 
-    useEffect(() => {
+    const currentUser = useCurrentUser();
+
+        useEffect(() => {
         const fetchPosts = async () => {
             try {
                 const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
@@ -38,10 +38,10 @@ function PostsPage({ message, filter="" }) {
         setHasLoaded(false);
         const timer = setTimeout(() => {
             fetchPosts();
-        }, 1000)
+        }, 1000);
         return () => {
             clearTimeout(timer);
-        }
+        };
     }, [filter, query, pathname, currentUser]);
   
     return (
@@ -66,7 +66,7 @@ function PostsPage({ message, filter="" }) {
                         {posts.results.length ? (
                             <InfiniteScroll
                                 children={
-                                    posts.results.map(post =>(
+                                    posts.results.map((post) =>(
                                         <Post key={post.id} {...post} setPosts={setPosts} />
                                     ))
                                 }
