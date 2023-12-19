@@ -117,7 +117,7 @@ ROOT_URLCONF = 'drf_fanzone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [os.path.join(BASE_DIR, 'staticfile', 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -196,7 +196,7 @@ MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = (
     'whitenoise.storage.CompressedManifestStaticFilesStorage')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfile', 'build'), ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 WHITENOISE_ROOT = BASE_DIR / 'staticfiles' / 'build'
 
