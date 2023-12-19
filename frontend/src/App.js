@@ -1,6 +1,5 @@
 import styles from "./App.module.css";
 import NavBar from "./components/NavBar";
-import ChooseTeam from "./components/TeamsDropdown";
 import Container from "react-bootstrap/Container";
 import { Route, Switch } from "react-router-dom";
 import "./api/axiosDefaults";
@@ -15,7 +14,6 @@ import ProfilePage from "./pages/profiles/ProfilePage";
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
-import SupportPage from "./pages/supported/SupportPage";
 
 
 
@@ -60,7 +58,6 @@ function App() {
                     <Route exact path="/posts/create" render={() => <PostCreateForm />} />
                     <Route exact path="/posts/:id" render={()=> <PostPage />} />
                     <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
-                    <Route exact path="/supported/:id" render={() => <SupportPage />} />
                     <Route exact path="/profiles/:id" render={()=> <ProfilePage />} />
                     <Route
                         exact
