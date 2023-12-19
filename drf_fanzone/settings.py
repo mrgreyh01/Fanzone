@@ -196,8 +196,9 @@ MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = (
     'whitenoise.storage.CompressedManifestStaticFilesStorage')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfile', 'build'), ]
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+WHITENOISE_ROOT = BASE_DIR / 'staticfiles' / 'build'
 
 DEFAULT_FILE_STORAGE = (
     'whitenoise.storage.CompressedManifestStaticFilesStorage')
