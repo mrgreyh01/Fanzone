@@ -61,7 +61,6 @@ ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
     'drf-fanzone.herokuapp.com',
-    '8000-welshdan-fanzone-3th723c2n6.us2.codeanyapp.com',
     'https://drf-fanzone-3th723c2n6.us2.herokuapp.com',
 ]
 
@@ -84,7 +83,6 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
-    'corsheaders',
     'profiles',
     'posts',
     'comments',
