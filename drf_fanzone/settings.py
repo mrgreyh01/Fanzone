@@ -60,8 +60,6 @@ DEBUG = 'DEBUG' in os.environ
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
-    'drf-fanzone.herokuapp.com',
-    'https://drf-fanzone-3th723c2n6.us2.herokuapp.com',
 ]
 
 # Application definition
