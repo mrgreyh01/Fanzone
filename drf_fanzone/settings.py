@@ -18,7 +18,9 @@ if os.path.exists('env.py'):
     import env
 
 # MEDIA Files on Cloudinary
-CLOUDINARY_STORAGE = os.environ.get('CLOUDINARY_STORAGE')
+CLOUDINARY_STORAGE = {
+    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
+}
 
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
@@ -76,9 +78,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'cloudinary_storage',
-    'cloudinary',
     'rest_framework',
     'django_filters',
     'rest_framework.authtoken',
@@ -88,6 +87,9 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
+    'cloudinary',
     'profiles',
     'posts',
     'comments',
