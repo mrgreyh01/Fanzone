@@ -12,7 +12,7 @@ The goal with Fanzone was to create a simple social media site with the usual
 post, comment and like functions but with the twist of being able to support a
 specific team to also see a feed with only posts about that certain team.
 
-### Click here to view (link to app)
+### Click here to view [Fanzone](https://fanzone-ceb2b022a19f.herokuapp.com/)
 
 -----
 
@@ -49,7 +49,7 @@ There were 33 User Stories in total:
 - 3 remain incomplete
 - 3 were removed due to time constraints (see section 7)
 
-![Screenshot of a the Github project overview with the list of User Stories](/readme-images/)
+![Screenshot](static/readme-images/)
 
 -----
 
@@ -63,13 +63,13 @@ I started from a few drawings of a flowchart and by using the free flowchart
 maker from the website [Canva](https://www.canva.com/online-whiteboard/flowcharts/)
 the design was set.
 
-![Screenshot of a flowchart detailing the pages linked in the fanzone app](/readme-images/)
+![Screenshot](static/readme-images/fanzone-flowchart.png "Flowchart detailing the pages linked in the fanzone app")
 
 ### Icons and images
 
 Fanzone Icon designed in Microsoft Paint:
 
-![Screenshot of the green favicon logo](/readme-images/logo.jpg)
+![Screenshot](static/readme-images/logo.jpg "Green favicon logo")
 
 ### Font and colour schemes
 
@@ -79,11 +79,11 @@ My two main choices of font were:
 
 The Oxygen Mono
 
-![Screenshot of example text in Oxygen Mono font](/readme-images/font-oxygen-mono.jpg)
+![Screenshot](static/readme-images/font-oxygen-mono.jpg "Example text in Oxygen Mono font")
 
 and the Open Sans fonts
 
-![Screenshot of example text in Open Sans font](/readme-images/font-open-sans.jpg)
+![ScreenshotExample text in Open Sans font](static/readme-images/font-open-sans.jpg)
 
 I chose the Oxygen Mono font as I felt it was simple and clean but a little
 relaxed at the same time.
@@ -100,17 +100,17 @@ There were a few other colours involved during the planning process.
 
 On deciding on the colour green I then chose between a few shades of green.
 
-![Screenshot of a colour wheel with the color #4fb076](/readme-images/4fb076.jpg)
+![Screenshot of a colour wheel with the color #4fb076](static/readme-images/4fb076.jpg)
 
-![Screenshot of a colour wheel with the color #4ff10e](/readme-images/4ff10e.jpg)
+![Screenshot of a colour wheel with the color #4ff10e](static/readme-images/4ff10e.jpg)
 
 I chose this shade of green felt energetic. #B5E61D
 
-![Screenshot of a colour wheel with the color #b5e61d](/readme-images/b5e61d.jpg)
+![Screenshot of a colour wheel with the color #b5e61d](static/readme-images/b5e61d.jpg)
 
 #### Fanzone Logo
 
-![fanzone logo](/readme-images/logo.jpg)
+![fanzone logo](static/readme-images/logo.jpg)
 
 The Favicon logo was designed by myself using Microsoft Paint and using a
 ball image shrunk down.
@@ -120,7 +120,7 @@ and I felt the logo was more appealing with white text as opposed to black text.
 
 #### Fanzone Favicon
 
-![fanzone favicon](/readme-images/favicon-16x16.png)
+![fanzone favicon](static/readme-images/favicon-16x16.png)
 
 The Favicon was created using [favicon generator](https://favicon.io/favicon-generator/)
 
@@ -128,21 +128,25 @@ The green is the same used in the logo and also with white text.
 
 #### FontAwesome Icons used as links
 
-![fontAwesome house icon](/readme-images/house-solid.svg) Home
-![fontAwesome user plus icon](/readme-images/user-plus-solid.svg) Sign Up
-![fontAwesome sign in icon](/readme-images/sign-in-alt-solid.svg) Sign In
-![fontAwesome plus icon](/readme-images/user-plus-solid.svg) Add Post
-![fontAwesome heart icon](/readme-images/heart-solid.svg) Supported
-![fontAwesome ball icon](/readme-images/futbol-solid.svg) Likes
-![fontAwesome sign out icon](/readme-images/sign-out-alt-solid.svg) Sign Out
+Linked command | Icon
+---:|:---:
+**Home** | ![fontAwesome house icon](static/readme-images/house-solid.svg)
+**Sign Up** | ![fontAwesome user plus icon](static/readme-images/user-plus-solid.svg)
+**Sign In** | ![fontAwesome sign in icon](static/readme-images/sign-in-alt-solid.svg)
+**Add Post** | ![fontAwesome plus icon](static/readme-images/user-plus-solid.svg) 
+**Supported** | ![fontAwesome heart icon](static/readme-images/heart-solid.svg)
+**Likes** | ![fontAwesome ball icon](static/readme-images/futbol-solid.svg)
+**Sign Out** | ![fontAwesome sign out icon](static/readme-images/sign-out-alt-solid.svg)
 
 #### Other FontAwesome icons
 
-![fontAwesome comments icon](/readme-images/comments-solid.svg) Comments
-![fontAwesome edit icon](/readme-images/edit-solid.svg) Edit
-![fontAwesome id card icon](/readme-images/id-card-solid.svg) Change username
-![fontAwesome key icon](/readme-images/key-solid.svg) Change password
-![fontAwesome search icon](/readme-images/search-solid.svg) Search
+Linked command | Icon
+---:|:---:
+**Comments** | ![fontAwesome comments icon](static/readme-images/comments-solid.svg)
+**Edit** | ![fontAwesome edit icon](static/readme-images/edit-solid.svg)
+**Change username** | ![fontAwesome id card icon](static/readme-images/id-card-solid.svg)
+**Change password** | ![fontAwesome key icon](static/readme-images/key-solid.svg)
+**Search** | ![fontAwesome search icon](static/readme-images/search-solid.svg)
 
 -----
 
@@ -192,11 +196,10 @@ pip install djangorestframework-simplejwt
 pip3 install dj_database_url==0.5.0 psycopg2
 pip3 install gunicorn django-cors-headers
 ```
+
 -----
 
 ## 5. Usage
-
-#### Starting up the app from IDE ####
 
 Starting of the app required two terminals open
 
@@ -207,26 +210,26 @@ To start the app, I started with these codes in terminal 1:
 
 To change directory to Fanzone/frontend
 
-```
+`
 cd frontend
-```
+`
 
 Then to start React
 
-```
+`
 npm start
-```
+`
 
 Then to start Django in terminal 1:
 
-```
+`
 python manage.py runserver
-```
+`
 
 The website was then run using Port: 3000 which is the connected to the
 frontend.
 
-#### Test Profiles ####
+#### Test Profiles
 
 - TestUser1 - TestPassword1
 - Alan / AlanPassword
@@ -261,7 +264,6 @@ Backend tests that were run include:
 The website is slow and there are many styling issues. The website is has not
 been checked using lighthouse, for its code or its layout.
 
-
 #### Incompletions
 
 There is a major part of this website that isn't complete.
@@ -283,7 +285,6 @@ as a source of inspiration:
 - The lessons, tutorials and course literature of Code Institute's Advanced
   Front End section, particularly including the 'Moments' and Django REST
   Framework modules.
-
 
 ### Help
 
