@@ -1,10 +1,10 @@
-# Fanzone  ![fanzone favicon](./frontend/public/favicon-16x16.png)
+# Fanzone ![fanzone favicon](./frontend/public/favicon-16x16.png)
 
 ![fanzone logo](./frontend/src/assets/logo.png)
 
 ### A social media site for football fans
 
------
+---
 
 ### The goal with Fanzone
 
@@ -14,7 +14,7 @@ specific team to also see a feed with only posts about that certain team.
 
 ### Click here to view [Fanzone](https://fanzone-ceb2b022a19f.herokuapp.com/)
 
------
+---
 
 ## Table of contents
 
@@ -29,7 +29,7 @@ specific team to also see a feed with only posts about that certain team.
 7. Problems and incompletions
 8. Credits
 
------
+---
 
 ## 1. Planning
 
@@ -51,7 +51,7 @@ There were 33 User Stories in total:
 
 ![Screenshot](static/readme-images/)
 
------
+---
 
 ## 2. App Layout
 
@@ -128,27 +128,27 @@ The green is the same used in the logo and also with white text.
 
 #### FontAwesome Icons used as links
 
-Linked command | Icon
----:|:---:
-**Home** | ![Screenshot](static/readme-images/house-solid.svg "fontAwesome house icon")
-**Sign Up** | ![Screenshot](static/readme-images/user-plus-solid.svg "fontAwesome user plus icon")
-**Sign In** | ![Screenshot](static/readme-images/sign-in-alt-solid.svg "fontAwesome sign in icon")
-**Add Post** | ![Screenshot](static/readme-images/user-plus-solid.svg "fontAwesome plus icon")
-**Supported** | ![Screenshot](static/readme-images/heart-solid.svg "fontAwesome heart icon")
-**Likes** | ![Screenshot](static/readme-images/futbol-solid.svg "fontAwesome ball icon")
-**Sign Out** | ![Screenshot](static/readme-images/sign-out-alt-solid.svg "fontAwesome sign out icon")
+| Linked command |                                          Icon                                          |
+| -------------: | :------------------------------------------------------------------------------------: |
+|       **Home** |      ![Screenshot](static/readme-images/house-solid.svg "fontAwesome house icon")      |
+|    **Sign Up** |  ![Screenshot](static/readme-images/user-plus-solid.svg "fontAwesome user plus icon")  |
+|    **Sign In** |  ![Screenshot](static/readme-images/sign-in-alt-solid.svg "fontAwesome sign in icon")  |
+|   **Add Post** |    ![Screenshot](static/readme-images/user-plus-solid.svg "fontAwesome plus icon")     |
+|  **Supported** |      ![Screenshot](static/readme-images/heart-solid.svg "fontAwesome heart icon")      |
+|      **Likes** |      ![Screenshot](static/readme-images/futbol-solid.svg "fontAwesome ball icon")      |
+|   **Sign Out** | ![Screenshot](static/readme-images/sign-out-alt-solid.svg "fontAwesome sign out icon") |
 
 #### Other FontAwesome icons
 
-Linked command | Icon
----:|:---:
-**Comments** | ![Screenshot](static/readme-images/comments-solid.svg "fontAwesome comments icon")
-**Edit** | ![Screenshot](static/readme-images/edit-solid.svg "fontAwesome edit icon")
-**Change username** | ![Screenshot](static/readme-images/id-card-solid.svg "fontAwesome id card icon")
-**Change password** | ![Screenshot](static/readme-images/key-solid.svg "fontAwesome key icon")
-**Search** | ![Screenshot](static/readme-images/search-solid.svg "fontAwesome search icon")
+|      Linked command |                                        Icon                                        |
+| ------------------: | :--------------------------------------------------------------------------------: |
+|        **Comments** | ![Screenshot](static/readme-images/comments-solid.svg "fontAwesome comments icon") |
+|            **Edit** |     ![Screenshot](static/readme-images/edit-solid.svg "fontAwesome edit icon")     |
+| **Change username** |  ![Screenshot](static/readme-images/id-card-solid.svg "fontAwesome id card icon")  |
+| **Change password** |      ![Screenshot](static/readme-images/key-solid.svg "fontAwesome key icon")      |
+|          **Search** |   ![Screenshot](static/readme-images/search-solid.svg "fontAwesome search icon")   |
 
------
+---
 
 ## 3. Used Technologies
 
@@ -163,7 +163,7 @@ With support from:
 - Heroku
 - Cloudinary
 
------
+---
 
 ## 4. Installation
 
@@ -197,7 +197,7 @@ pip3 install dj_database_url==0.5.0 psycopg2
 pip3 install gunicorn django-cors-headers
 ```
 
------
+---
 
 ## 5. Usage
 
@@ -210,34 +210,34 @@ To start the app, I started with these codes in terminal 1:
 
 To change directory to Fanzone/frontend
 
-`
-cd frontend
-`
+`cd frontend`
 
 Then to start React
 
-`
-npm start
-`
+`npm start`
 
 Then to start Django in terminal 1:
 
-`
-python manage.py runserver
-`
+`python manage.py runserver`
 
 The website was then run using Port: 3000 which is the connected to the
 frontend.
 
 #### Test Profiles
 
+**Admin**
+
+- admin / admin12345
 - TestUser1 - TestPassword1
+
+**Users**
+
 - Alan / AlanPassword
 - Phil / PhilPassword
 - TaraTaylor / TaraTaylor1
 - Sam / SamPassword
 
------
+---
 
 ## 6. Testing Issues
 
@@ -255,7 +255,7 @@ Backend tests that were run include:
 - User can see own posts
 - User cannot update a post that isn't their own
 
------
+---
 
 ## Problems and incompletions
 
@@ -273,7 +273,7 @@ the code.
 The README.md file is not complete and lacks extensive information on testing,
 website layout and descriptions, as well as how the website operates.
 
------
+---
 
 ## 8. Credits, Help and Copyright
 
@@ -325,7 +325,8 @@ From freepix.com:
 - Freepik
 - rawpixel.com
 
------
+---
+
 Problems 6/2
 Bad Request: /api/dj-rest-auth/login/
 [06/Feb/2024 14:46:10] "POST /api/dj-rest-auth/login/ HTTP/1.1" 400 68
