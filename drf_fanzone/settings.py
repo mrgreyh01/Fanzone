@@ -66,7 +66,7 @@ DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
-    'https://drf-fanzone-dfbf06e05b90.herokuapp.com',
+    'https://drf-fanzone-g3ncgzao1j.us2.herokuapp.com',
     'localhost',
 ]
 
@@ -208,3 +208,5 @@ WHITENOISE_ROOT = BASE_DIR / 'staticfiles' / 'build'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DEFAULT_AUTHENTICATION_CLASSES: ['rest_framework.authentication.TokenAuthentication']

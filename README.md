@@ -83,7 +83,7 @@ The Oxygen Mono
 
 and the Open Sans fonts
 
-![ScreenshotExample text in Open Sans font](static/readme-images/font-open-sans.jpg)
+![Screenshot](static/readme-images/font-open-sans.jpg "Example text in Open Sans font")
 
 I chose the Oxygen Mono font as I felt it was simple and clean but a little
 relaxed at the same time.
@@ -100,17 +100,17 @@ There were a few other colours involved during the planning process.
 
 On deciding on the colour green I then chose between a few shades of green.
 
-![Screenshot of a colour wheel with the color #4fb076](static/readme-images/4fb076.jpg)
+![Screenshot](static/readme-images/4fb076.jpg "colour wheel with the color #4fb076")
 
-![Screenshot of a colour wheel with the color #4ff10e](static/readme-images/4ff10e.jpg)
+![Screenshot](static/readme-images/4ff10e.jpg "Colour wheel with the color #4ff10")
 
 I chose this shade of green felt energetic. #B5E61D
 
-![Screenshot of a colour wheel with the color #b5e61d](static/readme-images/b5e61d.jpg)
+![Screenshot](static/readme-images/b5e61d.jpg "Colour wheel with the color #b5e61d")
 
 #### Fanzone Logo
 
-![fanzone logo](static/readme-images/logo.jpg)
+![Screenshot](static/readme-images/logo.jpg "fanzone logo")
 
 The Favicon logo was designed by myself using Microsoft Paint and using a
 ball image shrunk down.
@@ -120,7 +120,7 @@ and I felt the logo was more appealing with white text as opposed to black text.
 
 #### Fanzone Favicon
 
-![fanzone favicon](static/readme-images/favicon-16x16.png)
+![Screenshot](static/readme-images/favicon-16x16.png "fanzone favicon")
 
 The Favicon was created using [favicon generator](https://favicon.io/favicon-generator/)
 
@@ -130,23 +130,23 @@ The green is the same used in the logo and also with white text.
 
 Linked command | Icon
 ---:|:---:
-**Home** | ![fontAwesome house icon](static/readme-images/house-solid.svg)
-**Sign Up** | ![fontAwesome user plus icon](static/readme-images/user-plus-solid.svg)
-**Sign In** | ![fontAwesome sign in icon](static/readme-images/sign-in-alt-solid.svg)
-**Add Post** | ![fontAwesome plus icon](static/readme-images/user-plus-solid.svg) 
-**Supported** | ![fontAwesome heart icon](static/readme-images/heart-solid.svg)
-**Likes** | ![fontAwesome ball icon](static/readme-images/futbol-solid.svg)
-**Sign Out** | ![fontAwesome sign out icon](static/readme-images/sign-out-alt-solid.svg)
+**Home** | ![Screenshot](static/readme-images/house-solid.svg "fontAwesome house icon")
+**Sign Up** | ![Screenshot](static/readme-images/user-plus-solid.svg "fontAwesome user plus icon")
+**Sign In** | ![Screenshot](static/readme-images/sign-in-alt-solid.svg "fontAwesome sign in icon")
+**Add Post** | ![Screenshot](static/readme-images/user-plus-solid.svg "fontAwesome plus icon")
+**Supported** | ![Screenshot](static/readme-images/heart-solid.svg "fontAwesome heart icon")
+**Likes** | ![Screenshot](static/readme-images/futbol-solid.svg "fontAwesome ball icon")
+**Sign Out** | ![Screenshot](static/readme-images/sign-out-alt-solid.svg "fontAwesome sign out icon")
 
 #### Other FontAwesome icons
 
 Linked command | Icon
 ---:|:---:
-**Comments** | ![fontAwesome comments icon](static/readme-images/comments-solid.svg)
-**Edit** | ![fontAwesome edit icon](static/readme-images/edit-solid.svg)
-**Change username** | ![fontAwesome id card icon](static/readme-images/id-card-solid.svg)
-**Change password** | ![fontAwesome key icon](static/readme-images/key-solid.svg)
-**Search** | ![fontAwesome search icon](static/readme-images/search-solid.svg)
+**Comments** | ![Screenshot](static/readme-images/comments-solid.svg "fontAwesome comments icon")
+**Edit** | ![Screenshot](static/readme-images/edit-solid.svg "fontAwesome edit icon")
+**Change username** | ![Screenshot](static/readme-images/id-card-solid.svg "fontAwesome id card icon")
+**Change password** | ![Screenshot](static/readme-images/key-solid.svg "fontAwesome key icon")
+**Search** | ![Screenshot](static/readme-images/search-solid.svg "fontAwesome search icon")
 
 -----
 
@@ -286,6 +286,8 @@ as a source of inspiration:
   Front End section, particularly including the 'Moments' and Django REST
   Framework modules.
 
+[404 page - PedroTech](https://www.youtube.com/watch?v=9AZghsVgNvs)
+
 ### Help
 
 The following sources have been directly involved in helping to solve problems
@@ -323,3 +325,7 @@ From freepix.com:
 - rawpixel.com
 
 -----
+Problems 6/2
+Bad Request: /api/dj-rest-auth/login/
+[06/Feb/2024 14:46:10] "POST /api/dj-rest-auth/login/ HTTP/1.1" 400 68
+[solution](https://stackoverflow.com/questions/62592113/fetching-user-details-in-react-from-django-rest-auth-gives-back-403-forbidden)

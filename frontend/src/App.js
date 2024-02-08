@@ -1,7 +1,7 @@
 import styles from "./App.module.css";
+import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Container from "react-bootstrap/Container";
-import { Route, Switch } from "react-router-dom";
 import "./api/axiosDefaults";
 import SignUpForm from "./pages/auth/SignUpForm";
 import SignInForm from "./pages/auth/SignInForm";
@@ -14,8 +14,7 @@ import ProfilePage from "./pages/profiles/ProfilePage";
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
-
-
+import PageNotFound from './pages/profiles/PageNotFound';
 
 
 function App() {
@@ -74,7 +73,7 @@ function App() {
                         path="/profiles/:id/edit"
                         render={() => <ProfileEditForm />}
                     />
-                    <Route render={() => <p>Page not found!</p>} />
+                    <Route component={PageNotFound} />
                 </Switch>
             </Container>
         </div>
