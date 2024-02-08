@@ -287,6 +287,7 @@ as a source of inspiration:
   Framework modules.
 
 [404 page - PedroTech](https://www.youtube.com/watch?v=9AZghsVgNvs)
+[websocket problems](https://github.com/facebook/create-react-app/issues/11779)
 
 ### Help
 

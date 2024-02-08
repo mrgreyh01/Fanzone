@@ -14,7 +14,7 @@ import ProfilePage from "./pages/profiles/ProfilePage";
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
-import PageNotFound from './pages/profiles/PageNotFound';
+import PageNotFound from './components/PageNotFound';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
                     <Route
                         exact
                         path="/feed"
-                        render={() => 
+                        render={() =>
                             <PostsPage
                                 message="No results found. Try a new search or follow a user."
                                 filter={`owner_followed_owner_profiles=${profile_id}&`}
@@ -55,9 +55,9 @@ function App() {
                     <Route exact path="/signin" render={() => <SignInForm />} />
                     <Route exact path="/signup" render={() => <SignUpForm />} />
                     <Route exact path="/posts/create" render={() => <PostCreateForm />} />
-                    <Route exact path="/posts/:id" render={()=> <PostPage />} />
+                    <Route exact path="/posts/:id" render={() => <PostPage />} />
                     <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
-                    <Route exact path="/profiles/:id" render={()=> <ProfilePage />} />
+                    <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
                     <Route
                         exact
                         path="/profiles/:id/edit/username"

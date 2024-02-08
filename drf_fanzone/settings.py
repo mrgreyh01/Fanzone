@@ -66,7 +66,9 @@ DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
-    'https://drf-fanzone-g3ncgzao1j.us2.herokuapp.com',
+    '8000-welshdan-fanzone-g3ncgzao1j.us2.codeanyapp.com',
+    '8000-welshdan-fanzone-g3ncgzao1j.us2.codeanyapp.com',
+    '8000-welshdan-fanzone-g3ncgzao1j.us2.codeanyapp.com',
     'localhost',
 ]
 
@@ -210,3 +212,5 @@ WHITENOISE_ROOT = BASE_DIR / 'staticfiles' / 'build'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DEFAULT_AUTHENTICATION_CLASSES: ['rest_framework.authentication.TokenAuthentication']
+
+WDS_SOCKET_PORT=0
