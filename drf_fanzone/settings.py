@@ -200,7 +200,7 @@ STATICFILES_STORAGE = (
     'whitenoise.storage.CompressedManifestStaticFilesStorage')
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 WHITENOISE_ROOT = BASE_DIR / 'staticfiles' / 'build'
 
@@ -212,4 +212,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DEFAULT_AUTHENTICATION_CLASSES: ['rest_framework.authentication.TokenAuthentication']
 
-WDS_SOCKET_PORT=0
+LOGIN_REDIRECT_URL = '/accounts/login'
+LOGIN_URL = '/accounts/login'

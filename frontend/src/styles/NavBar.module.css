@@ -1,6 +1,7 @@
 .NavBar {
     border: 1px solid #FFFFFF;
     background-color: #B5E61D;
+    position: fixed;
 }
 .NavLink {
     padding: 5px;
