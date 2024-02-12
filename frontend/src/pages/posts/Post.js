@@ -66,7 +66,7 @@ const Post = (props) => {
     const handleDelete = async () => {
         try {
             await axiosRes.delete(`/posts/${id}/`);
-            history.goBack();
+            history.push();
         } catch (err) {
         }
     };
@@ -76,7 +76,7 @@ const Post = (props) => {
             <Card.Body>
                 <Media className="align-items-center justify-content-between">
                     <Link to={`/profiles/${profile_id}`}>
-                        <Avatar src={profile_image} height={55} />
+                        <Avatar src={profile_image} height={55} roundedSize={8} />
                         {owner}
                     </Link>
                     <div className="d-flex align-items-center">

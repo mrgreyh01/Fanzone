@@ -45,7 +45,7 @@ const UsernameForm = () => {
         ...prevUser,
         username,
       }));
-      history.goBack();
+      history.push();
     } catch (err) {
       setErrors(err.response?.data);
     }
@@ -72,7 +72,7 @@ const UsernameForm = () => {
             ))}
             <Button
               className={`${btnStyles.Button} ${btnStyles.Blue}`}
-              onClick={() => history.goBack()}
+              onClick={() => history.push()}
             >
               cancel
             </Button>

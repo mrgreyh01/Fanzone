@@ -45,7 +45,7 @@ const UserPasswordForm = () => {
     event.preventDefault();
     try {
       await axiosRes.post("/dj-rest-auth/password/change/", userData);
-      history.goBack();
+      history.push();
     } catch (err) {
       setErrors(err.response?.data);
     }
@@ -88,7 +88,7 @@ const UserPasswordForm = () => {
             ))}
             <Button
               className={`${btnStyles.Button} ${btnStyles.Blue}`}
-              onClick={() => history.goBack()}
+              onClick={() => history.push()}
             >
               cancel
             </Button>

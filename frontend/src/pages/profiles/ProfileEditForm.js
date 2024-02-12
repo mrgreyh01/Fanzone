@@ -75,7 +75,7 @@ const ProfileEditForm = () => {
         ...currentUser,
         profile_image: data.image,
       }));
-      history.goBack();
+      history.push();
     } catch (err) {
       setErrors(err.response?.data);
     }
@@ -101,7 +101,7 @@ const ProfileEditForm = () => {
       ))}
       <Button
         className={`${btnStyles.Button} ${btnStyles.Blue}`}
-        onClick={() => history.goBack()}
+        onClick={() => history.push()}
       >
         cancel
       </Button>
