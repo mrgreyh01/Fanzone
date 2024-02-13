@@ -228,14 +228,15 @@ frontend.
 **Admin**
 
 - admin / admin12345
+- admin1 / admin1
 - TestUser1 - TestPassword1
 
 **Users**
 
-- Alan / AlanPassword
-- Phil / PhilPassword
-- TaraTaylor / TaraTaylor1
-- Sam / SamPassword
+- Alan / AlanPassword OK
+- Phil / PhilPassword OK
+- TaraTaylor / TaraPassword1 OK
+- Sam / SamPassword OK
 
 ---
 
