@@ -237,6 +237,7 @@ frontend.
 - Phil / PhilPassword OK
 - TaraTaylor / TaraPassword1 OK
 - Sam / SamPassword OK
+- Sallu / SallyPassword OK
 
 ---
 
