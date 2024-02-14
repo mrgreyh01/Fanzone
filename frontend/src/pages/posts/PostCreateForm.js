@@ -19,16 +19,18 @@ import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
 
+
 function PostCreateForm() {
     useRedirect("loggedOut");
     const [errors, setErrors] = useState({});
 
     const [postData, setPostData] = useState({
+        team: "",
         title: "",
         content: "",
         image: "",
     });
-    const { title, content, image } = postData;
+    const { team, title, content, image } = postData;
 
     const imageInput = useRef(null);
     const history = useHistory();
@@ -54,6 +56,7 @@ function PostCreateForm() {
         event.preventDefault();
         const formData = new FormData();
 
+        formData.append("team", team);
         formData.append("title", title);
         formData.append("content", content);
         formData.append("image", imageInput.current.files[0]);
@@ -72,12 +75,24 @@ function PostCreateForm() {
     const textFields = (
         <div className="text-center">
             <Form.Group>
+                <Form.Label>Select Team</Form.Label>
+                <Form.Control
+                    name="team"
+                    value={team}
+                    onChange={handleChange}
+                    required
+                >
+                    <option>{team}</option>
+                </Form.Control>
+            </Form.Group>
+            <Form.Group>
                 <Form.Label>Title</Form.Label>
                 <Form.Control
                     type="text"
                     name="title"
                     value={title}
                     onChange={handleChange}
+                    required
                 />
             </Form.Group>
             {errors?.title?.map((message, idx) => (
@@ -93,6 +108,7 @@ function PostCreateForm() {
                     name="content"
                     value={content}
                     onChange={handleChange}
+                    required
                 />
             </Form.Group>
             {errors?.content?.map((message, idx) => (
