@@ -74,7 +74,7 @@ function PostCreateForm() {
 
     const textFields = (
         <div className="text-center">
-            <Form.Group>
+            <Form.Select>
                 <Form.Label>Select Team</Form.Label>
                 <Form.Control
                     name="team"
@@ -84,7 +84,7 @@ function PostCreateForm() {
                 >
                     <option>{team}</option>
                 </Form.Control>
-            </Form.Group>
+            </Form.Select>
             <Form.Group>
                 <Form.Label>Title</Form.Label>
                 <Form.Control
