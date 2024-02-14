@@ -34,7 +34,7 @@ function App() {
           />
           <Route
             exact
-            path="/feed"
+            path="/supported"
             render={() => (
               <PostsPage
                 message="No results found. Try a new search or follow a user."

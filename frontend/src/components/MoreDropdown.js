@@ -47,33 +47,39 @@ export const MoreDropdown = ({ handleEdit, handleDelete }) => {
 
 
 export function ProfileEditDropdown({ id }) {
-    const history = useHistory();
-    return (
-      <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">
-        <Dropdown.Toggle as={ThreeDots} />
-        <Dropdown.Menu>
-          <Dropdown.Item
-            onClick={() => history.push(`/profiles/${id}/edit`)}
-            aria-label="edit-profile"
-          >
-            <i className="fas fa-edit" /> edit profile
-          </Dropdown.Item>
-          <Dropdown.Item
-            onClick={() => history.push(`/profiles/${id}/edit/username`)}
-            aria-label="edit-username"
-          >
-            <i className="far fa-id-card" />
-            change username
-          </Dropdown.Item>
-          <Dropdown.Item
-            onClick={() => history.push(`/profiles/${id}/edit/password`)}
-            aria-label="edit-password"
-          >
-            <i className="fas fa-key" />
-            change password
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-    );
-};
+  const history = useHistory();
+  return (
+    <Dropdown className={`ml-auto px-3 ${styles.Absolute}`} drop="left">
+      <Dropdown.Toggle as={ThreeDots} />
+      <Dropdown.Menu>
+        <Dropdown.Item
+          onClick={() => history.push(`/profiles/${id}/edit/team`)}
+          aria-label="edit-team"
+        >
+          <i className="fas fa-heart" /> change team
+        </Dropdown.Item>
+        <Dropdown.Item
+          onClick={() => history.push(`/profiles/${id}/edit`)}
+          aria-label="edit-profile"
+        >
+          <i className="fas fa-edit" /> edit profile
+        </Dropdown.Item>
+        <Dropdown.Item
+          onClick={() => history.push(`/profiles/${id}/edit/username`)}
+          aria-label="edit-username"
+        >
+          <i className="far fa-id-card" />
+          change username
+        </Dropdown.Item>
+        <Dropdown.Item
+          onClick={() => history.push(`/profiles/${id}/edit/password`)}
+          aria-label="edit-password"
+        >
+          <i className="fas fa-key" />
+          change password
+        </Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  );
+}
   

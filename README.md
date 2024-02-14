@@ -290,6 +290,7 @@ as a source of inspiration:
 
 [404 page - PedroTech](https://www.youtube.com/watch?v=9AZghsVgNvs)
 [websocket problems](https://github.com/facebook/create-react-app/issues/11779)
+[Guide for models for Supported posts](https://docs.djangoproject.com/en/5.0/ref/models/fields/)
 
 ### Help
 
