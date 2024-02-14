@@ -5,9 +5,9 @@ from django.contrib.auth.models import User
 class Post(models.Model):
     """
     Post model, related to 'owner', i.e. a User instance.
-    Default image set so that we can always reference image.url.
     """
-    supported_teams_choices = [
+    supported_teams_choices = {
+        ('SELECT_TEAM', 'Select team'),
         ('ARSENAL', 'Arsenal'), ('ASTON_VILLA', 'Aston Villa'),
         ('BOURNEMOUTH_AFC', 'Bournemouth AFC'), ('BRENTFORD', 'Brentford'),
         ('BRIGHTON_&_HOVE_ALBION', 'Brighton & Hove Albion'), ('BURNLEY', 'Burnley'),
@@ -18,7 +18,7 @@ class Post(models.Model):
         ('NEWCASTLE_UTD', 'Newcastle Utd'), ('NOTTINGHAM_FOREST', 'Nottingham Forest'),
         ('SHEFFIELD_UTD', 'Sheffield Utd'), ('TOTTENHAM_HOTSPUR', 'Tottenham Hotspur'),
         ('WEST_HAM_UTD', 'West Ham Utd'), ('WOLVERHAMPTON_WANDERERS', 'Wolverhampton Wanderers')
-    ]
+    }
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -29,7 +29,7 @@ class Post(models.Model):
         upload_to='images/', default='../default_post_uxb6vu', blank=True
     )
     supported_teams_choices = models.CharField(
-        max_length=24, choices=supported_teams_choices, default="", blank=False
+        max_length=24, choices=supported_teams_choices, default='SELECT_TEAM'
     )
 
     class Meta:
