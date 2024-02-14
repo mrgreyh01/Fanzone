@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+# Not needed
 class Support(models.Model):
 
     owner = models.ForeignKey(

@@ -19,6 +19,7 @@ import PageNotFound from "./components/PageNotFound";
 function App() {
   const currentUser = useCurrentUser();
   const profile_id = currentUser?.profile_id || "";
+  const team_name = '';//currentUser?.supported_team;
 
   return (
     <div className={styles.App}>
@@ -38,7 +39,7 @@ function App() {
             render={() => (
               <PostsPage
                 message="No results found. Try a new search or follow a user."
-                filter={`owner_followed_owner_profiles=${profile_id}&`}
+                filter={`supported_team__team=${team_name}&`}
               />
             )}
           />

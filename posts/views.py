@@ -24,6 +24,8 @@ class PostList(generics.ListCreateAPIView):
         'owner__followed__owner__profile',
         'likes__owner__profile',
         'owner__profile',
+        #Add filter for supported_teams
+        # 'supported_team__team',
     ]
     search_fields = [
         'owner__username',

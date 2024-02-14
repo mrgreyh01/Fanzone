@@ -1,6 +1,7 @@
 from django.db import models
 from django.db.models.signals import post_save
 from django.contrib.auth.models import User
+from supported.models import TeamsList
 
 
 class Profile(models.Model):
@@ -11,6 +12,9 @@ class Profile(models.Model):
     content = models.TextField(blank=True)
     image = models.ImageField(
         upload_to='images/', default='../default_profile_aw6v7f'
+    )
+    supported_team = models.ForeignKey(
+        TeamsList, on_delete=models.CASCADE, null=True
     )
 
     class Meta:
