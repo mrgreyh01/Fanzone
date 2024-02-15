@@ -74,17 +74,6 @@ function PostCreateForm() {
 
     const textFields = (
         <div className="text-center">
-            <Form.Select>
-                <Form.Label>Select Team</Form.Label>
-                <Form.Control
-                    name="team"
-                    value={team}
-                    onChange={handleChange}
-                    required
-                >
-                    <option>{team}</option>
-                </Form.Control>
-            </Form.Select>
             <Form.Group>
                 <Form.Label>Title</Form.Label>
                 <Form.Control
