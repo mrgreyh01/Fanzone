@@ -80,12 +80,6 @@ function ProfilePage() {
                             <div>following</div>
                         </Col>
                     </Row>
-                    <Row className='justify-content-center no-gutters'>
-                        <div xs={4} className="my-4">
-                            <div>{profile?.supported_team}</div>
-                            <div>My supported team is {supported_team}</div>
-                        </div>
-                    </Row>
                 </Col>
                 <Col lg={3} className="text-lg-right">
                     {currentUser &&

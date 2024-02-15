@@ -18,16 +18,29 @@ specific team to also see a feed with only posts about that certain team.
 
 ## Table of contents
 
-1. Planning
-2. App Layout
-3. Used Technologies
-4. Installation
-5. Usage
-6. Testing issues
-   Testing
+1. Project Overview
+   Planning
+
+2. Front-End Documentation
+   Design Process: UX Desing, mockups and design diagrams
+   Security Practices: security measure (sexret keys etc)
+   Component Usage: use of React components, architecture and component composition
+   Deployment: How to deploy the Front-End
+   Coding Standards: JSX, modular component use
+3. Back-End Documentation
+   API Overview: description of API, functionality and how it integrates with the Front-End
+   Security Practices: security measures (handling of sensitive data)
+   Database Design: Structure of database, incl. custom models used
+   Deployment: How to deploy Back-End
+   Coding Standards: Python coding standars, adhering to PEP8 guidelines
+4. Testing and Version Control
+   Manual Testing: testing procedures and results for Front End and Back-End
+   Version Control: Usage of Git and Githug for version control, incl explanation of commit messages
    Bugs
-7. Problems and incompletions
-8. Credits
+5. Problems and incompletions
+6. Agile Project Management
+7. Additional Information
+   Credits, License and Thanks
 
 ---
 
@@ -227,17 +240,17 @@ frontend.
 
 **Admin**
 
-- admin / admin12345
 - admin1 / admin1
 - TestUser1 - TestPassword1
 
 **Users**
 
-- Alan / AlanPassword OK
-- Phil / PhilPassword OK
-- TaraTaylor / TaraPassword1 OK
-- Sam / SamPassword OK
-- Sallu / SallyPassword OK
+- Alan / AlanPassword
+- Phil / PhilPassword
+- TaraTaylor / TaraPassword1
+- Sam / SamPassword
+- Sally / SallyPassword
+- Siri / SiriPassword
 
 ---
 
