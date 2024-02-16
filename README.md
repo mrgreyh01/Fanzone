@@ -162,8 +162,6 @@ The green is the same used in the logo and also with white text.
 
 #### 2.2 Security Practices: security secret keys etc
 
-
-
 #### 2.3 Component Usage: use of React components, architecture and component composition
 
 #### 2.4 Deployment: How to deploy the Front-End
@@ -320,7 +318,19 @@ Once you have logged in, the following steps need to be taken:
 
 Link to the creation of the ElephantSQL database can be found [here](https://www.elephantsql.com/docs/index.html)
 
-##### 3.5 Coding Standards: Python coding standards, adhering to PEP8 guidelines
+#### 3.5 Coding Standards: Python coding standards, adhering to PEP8 guidelines
+
+I have tried to follow the guidelines as explained in this simple table from [Real Python](https://realpython.com/python-pep8/)
+
+| Type     | Naming Convention                                                                                                                                                                                                     | Examples                                        |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Function | Use a lowercase word or words. Separate words by underscores to improve readability.                                                                                                                                  | function, python_function                       |
+| Variable | Use a lowercase single letter, word, or words. Separate words with underscores to improve readability.                                                                                                                | x, var, python_variable                         |
+| Class    | Start each word with a capital letter. Don’t separate words with underscores. This style is called [camel case](https://en.wikipedia.org/wiki/Camel_case) or [Pascal case](https://en.wikipedia.org/wiki/Camel_case). | Model, PythonClass                              |
+| Method   | Use a lowercase word or words. Separate words with underscores to improve readability.                                                                                                                                | class_method, method                            |
+| Constant | Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.                                                                                                               | CONSTANT, PYTHON_CONSTANT, PYTHON_LONG_CONSTANT |
+| Module   | Use a short, lowercase word or words. Separate words with underscores to improve readability.                                                                                                                         | module.py, python_module.py                     |
+| Package  | Use a short, lowercase word or words. Don’t separate words with underscores.                                                                                                                                          | package, pythonpackage                          |
 
 ---
 
@@ -332,7 +342,36 @@ Link to the creation of the ElephantSQL database can be found [here](https://www
 
 #### 4.3 Remaining errors after testing
 
-#### 4.4 Other issues
+#### 4.4 Other issues and information
+
+There was an issue with the backend at one point and so there were parts of the
+testing which remain incomplete. I also had to restart my workspace the day
+before submission which helped to create some gremlins in the system.
+
+Backend tests that were run include:
+
+- Tests can list posts
+- Test if user can create a post
+- Test if pages can be accessed when logged out
+- Test if user can see a post using post id
+- Test if user can see a post with an invalid id
+- User can see own posts
+- User cannot update a post that isn't their own
+
+**Test Profiles**
+
+Admin
+
+- admin / admin12345
+- TestUser1 - TestPassword1
+
+Users
+
+- Alan / AlanPassword
+- Phil / PhilPassword
+- TaraTaylor / TaraPassword1
+- Sam / SamPassword
+- Sally / SallyPassword
 
 ---
 
@@ -390,6 +429,13 @@ frontend. While I could connect to the DRF part of the API by using Port: 8000
 
 #### 6.2 Front-End libraries: Justification for the choice of libraries used during the project
 
+ReactJS - There are many reasons why this is perfect for my project:
+
+- It has many repeatable parts
+- Easy and "clean" for a user to use
+- Becomes powerful when used with Django REST Framework
+- Easy to connect to Cloudinary
+
 #### 6.3 Credits: Tutorials or articles used while developing
 
 The following sources have been used to provide either a direct influence or
@@ -400,6 +446,9 @@ as a source of inspiration:
   Framework modules.
 
 - [Guide for models for Supported posts](https://docs.djangoproject.com/en/5.0/ref/models/fields/)
+- Pep8 information: [Real Python](https://realpython.com/python-pep8/)
+- Information about JSX: [geeksforgeeks.org](https://www.geeksforgeeks.org/reactjs-jsx-introduction/)
+
 
 #### 6.4 License: Add info about software license if needed
 
@@ -437,105 +486,3 @@ issues with the development of Fanzone:
   including lines too long errors and cookie refresh errors
 - Keith Herne
 - Abhi Shek
-
----
-
-## 4. Installation
-
-#### Dependencies
-
-Frontend
-
-```
-npm install
-ES7 React/Redux/GraphQl/React-Native - (snippets) by dsznajder
-npm install react-bootstrap@1.6.3 bootstrap@4.6.0
-npm install axios
-npm install react_infinite-scroll-component
-npm install msw –save-dev (for mock API for testing)
-npm install jwt-decode (to decode json webtokens)
-```
-
-Backend
-
-```
-pip3 install 'django<4'
-django-admin startproject drf_fanzone .
-pip install django-cloudinary-storage
-Pip install Pillow
-Pip install djangorestframework
-Pip install django-filter
-pip3 install dj-rest-auth==2.1.9 (For JSON web tokens)
-pip install ‘dj-rest-auth[with_social]’
-pip install djangorestframework-simplejwt
-pip3 install dj_database_url==0.5.0 psycopg2
-pip3 install gunicorn django-cors-headers
-```
-
----
-
-## 5. Usage
-
-#### Test Profiles
-
-**Admin**
-
-- admin / admin12345
-- TestUser1 - TestPassword1
-
-**Users**
-
-- Alan / AlanPassword
-- Phil / PhilPassword
-- TaraTaylor / TaraPassword1
-- Sam / SamPassword
-- Sally / SallyPassword
-
----
-
-## 6. Testing Issues
-
-There was an issue with the backend at one point and so there were parts of the
-testing which remain incomplete. I also had to restart my workspace the day
-before submission which helped to create some gremlins in the system.
-
-Backend tests that were run include:
-
-- Tests can list posts
-- Test if user can create a post
-- Test if pages can be accessed when logged out
-- Test if user can see a post using post id
-- Test if user can see a post with an invalid id
-- User can see own posts
-- User cannot update a post that isn't their own
-
----
-
-## Problems and incompletions
-
-#### Problems
-
-The website is slow and there are many styling issues. The website is has not
-been checked using lighthouse, for its code or its layout.
-
-#### Incompletions
-
-There is a major part of this website that isn't complete.
-The supported teams function is not complete and is only partially complete in
-the code.
-
-The README.md file is not complete and lacks extensive information on testing,
-website layout and descriptions, as well as how the website operates.
-
----
-
-## 8. Credits, Help and Copyright
-
-### Copyright
-
----
-
-Problems 6/2
-Bad Request: /api/dj-rest-auth/login/
-[06/Feb/2024 14:46:10] "POST /api/dj-rest-auth/login/ HTTP/1.1" 400 68
-[solution](https://stackoverflow.com/questions/62592113/fetching-user-details-in-react-from-django-rest-auth-gives-back-403-forbidden)
