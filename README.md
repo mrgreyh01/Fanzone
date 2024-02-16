@@ -308,8 +308,19 @@ Then to enable a library that provides image processing in the project, "Pillow"
 pip install Pillow
 ```
 
+**ElephantSQL creation**
 
-###### 3.5 Coding Standards: Python coding standards, adhering to PEP8 guidelines
+Once you have logged in, the following steps need to be taken:
+- Create a "new instance"
+- Name the instance after your drf prject name (e.g. drf-fanzone)
+- Keep to the Tiny Turtle (free) plan
+- Select Europe as your region, if you are in Europe
+- Click "Create ElephantSQL" to create your instance
+- Once created, you will get a connection string. This string should be added to both your Heroku config vars and your env.py file
+
+Link to the creation of the ElephantSQL database can be found [here](https://www.elephantsql.com/docs/index.html)
+
+##### 3.5 Coding Standards: Python coding standards, adhering to PEP8 guidelines
 
 ---
 
@@ -329,13 +340,17 @@ pip install Pillow
 
 #### 5.1 User Stories - Front-End
 
+![Screenshot](static/readme-images/user_stories_front.jpg "list of front-end user stories")
+
 #### 5.2 User Stories - Back-End
+
+![Screenshot](static/readme-images/user_stories_back.jpg "list of back-end user stories")
 
 #### 5.3 Agile Practices - Explanation of other Agile Methodology used
 
-I used the Github "Projects" to 
+Github "Milestones
 
-![Screenshot](static/readme-images/)
+![Screenshot](static/readme-images/milestones.jpg "list of milestone groups")
 
 ---
 
