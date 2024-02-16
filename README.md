@@ -46,7 +46,7 @@ specific team to also see a feed with only posts about that certain team.
    6.1 Connecting via the terminal
    6.2 Front-End libraries: Justification for the choice of libraries used during the project<br/>
    6.3 Credits: Tutorials or articles used while developing<br/>
-   6.4 License: Add info about software license if needed<br/>
+   6.4 Licence: Add info about software license if needed<br/>
    6.5 Thanks: add thanks to individuals who have helped or guided during the project<br/>
 
 
@@ -156,6 +156,7 @@ The green is the same used in the logo and also with white text.
 | ------------------: | :--------------------------------------------------------------------------------: |
 |        **Comments** | ![Screenshot](static/readme-images/comments-solid.svg "fontAwesome comments icon") |
 |            **Edit** |     ![Screenshot](static/readme-images/edit-solid.svg "fontAwesome edit icon")     |
+|     **Change team** |     ![Screenshot](static/readme-images/heart-solid.svg "fontAwesome heart icon")   |
 | **Change username** |  ![Screenshot](static/readme-images/id-card-solid.svg "fontAwesome id card icon")  |
 | **Change password** |      ![Screenshot](static/readme-images/key-solid.svg "fontAwesome key icon")      |
 |          **Search** |   ![Screenshot](static/readme-images/search-solid.svg "fontAwesome search icon")   |
@@ -163,6 +164,17 @@ The green is the same used in the logo and also with white text.
 #### 2.2 Security Practices: security secret keys etc
 
 #### 2.3 Component Usage: use of React components, architecture and component composition
+
+There are 5 reusable components in Fanzone:
+
+| Component       | What it does                                                                                                         | Times used |
+| --------------- | -------------------------------------------------------------------------------------------------------------------- | ---------- |
+| Asset.js        | It is used mostly for the loading spinner but can be used for other image files                                      | 6          |
+| Avatar.js       | The users profile image which is used when posting, commenting, following and on own profile                         | 5          |
+| MoreDropdown.js | To call the "three dots" editing/deleting function. Used on posts/comments and also profile editing                  | 3          |
+| NavBar.js       | Used for the main NavBar and contains the icons and their links                                                      | 1          |
+| PageNotFound.js | A replacement of the 404 file, this page is connected to the App.js file and is used when a wrong address is entered | 1          |
+
 
 #### 2.4 Deployment: How to deploy the Front-End
 
@@ -236,13 +248,72 @@ The website [geeksforgeeks.org]('https://www.geeksforgeeks.org/reactjs-jsx-intro
 
 **Examples of JSX in Fanzone**
 
+Below is a good example of JSX code in Fanzone. We see a functional component called Avatar. React is imported as is the css created for this function called Avatar.module.css.
 
+This function renders a ```<span>``` element with the parameters of the Avatar's image. ```export default Avatar;``` means that this function can then be imported into other parts of the code.
+
+```
+import React from 'react'
+import styles from "../styles/Avatar.module.css"
+
+const Avatar = ({ src, height = 45, text }) => {
+    return (
+        <span>
+            <img
+            className={styles.Avatar}
+            src={src}
+            height={height}
+            width={height}
+            alt="avatar"
+            />
+            {text}
+        </span>
+    );
+};
+
+export default Avatar;
+```
+The benefits to using JSX include:
+
+- Enables users to build interfaces in a more intuitive and recognisable way.
+- Interfaces can be influenced directly instead of using the DOM directly.
+- Users familiar to JavaScript can use their knowledge and create more complex interfaces.
+- JSX is important to React, so learning JSX will allow for greater usage of React.
 
 ---
 
 ## 3. Back-End Documentation
 
 #### 3.1 API Overview: description of API, functionality and how it integrates with the Front-End
+
+The API uses a few different databases to fascilitate the needs of the website:
+
+- Cloudinary receives images uploaded as either profile images or post images, as well as stores static files contained on the workspace. There are many ```src``` links that connect to the image database of Cloudinary.
+- ElephantSQL stores the database information about parts such as profiles, posts and supported teams.
+
+The connections from the API and it's databases through the Front-End is largely integrated either through direct code or through the models.py files of the apps. These models.py files can be found in the following apps.
+
+Using the GET method, the API connects through the following url patterns:
+
+```
+admin/
+api/api-auth/
+api/dj-rest-auth/logout/
+api/dj-rest-auth/
+api/dj-rest-auth/registration/
+api/ profiles/
+api/ profiles/<int:pk>/
+api/ posts/
+api/ posts/<int:pk>/
+api/ comments/
+api/ comments/<int:pk>/
+api/ likes/
+api/ likes/<int:pk>/
+api/ followers/
+api/ followers/<int:pk>/
+api/ supported/
+api/ supported/<int:pk>/
+```
 
 #### 3.2 Security Practices: security measures (handling of sensitive data)
 
@@ -448,7 +519,7 @@ as a source of inspiration:
 - [Guide for models for Supported posts](https://docs.djangoproject.com/en/5.0/ref/models/fields/)
 - Pep8 information: [Real Python](https://realpython.com/python-pep8/)
 - Information about JSX: [geeksforgeeks.org](https://www.geeksforgeeks.org/reactjs-jsx-introduction/)
-
+- More information about JSX: [kinsta.com](https://kinsta.com/knowledgebase/what-is-jsx/#:~:text=Here's%20a%20simple%20example%20of,element%20with%20a%20greeting%20message.)
 
 #### 6.4 License: Add info about software license if needed
 

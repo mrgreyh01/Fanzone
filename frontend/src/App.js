@@ -38,7 +38,7 @@ function App() {
             path="/supported"
             render={() => (
               <PostsPage
-                message="No results found. Try a new search or follow a user."
+                message="No results found. Changed your team in your profile to see results."
                 filter={`supported_team__team=${team_name}&`}
               />
             )}
