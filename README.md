@@ -163,6 +163,11 @@ The green is the same used in the logo and also with white text.
 
 #### 2.2 Security Practices: security secret keys etc
 
+The following methods were used to raise security through the front end:
+
+- "allauth" authentication and authorization is used for inlogging and storing information via the admin portal
+- CORS allowed via Client Origin link, also saved in the env.py file
+
 #### 2.3 Component Usage: use of React components, architecture and component composition
 
 There are 5 reusable components in Fanzone:
@@ -329,6 +334,8 @@ In env.py:
 
 #### 3.3 Database Design: Structure of database, incl. custom models used
 
+The custom model used was the Supported model. This is used in both Post creation and also in the Profile of each user. A user can choose their favourite team from a list of teams and then if their chosen team matches the selected team in the posts, then they will appear in the user's Supported Feed.
+
 #### 3.4 Deployment: How to deploy Back-End
 
 **Steps to deploy in Github**
@@ -409,15 +416,41 @@ I have tried to follow the guidelines as explained in this simple table from [Re
 
 #### 4.1 Manual Testing: testing procedures and results for Front End and Back-End
 
-#### 4.2 Version Control: Usage of Git and Githug for version control, incl explanation of commit messages
-
-#### 4.3 Remaining errors after testing
-
-#### 4.4 Other issues and information
-
-There was an issue with the backend at one point and so there were parts of the
-testing which remain incomplete. I also had to restart my workspace the day
-before submission which helped to create some gremlins in the system.
+|    | Back/Front? | Area           | Test                                                                          | Expected Result                                                        | Pass? | Notes                                                |
+| -- | ----------- | -------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------- | ----- | ---------------------------------------------------- |
+| 1  | Front       | NavBar         | Clicking "sign in" icon                                                       | Links to "sign in" page                                                | Yes   |                                                      |
+| 2  | Front       | NavBar         | Clicking "sign up" icon                                                       | Links to "sign up" page                                                | Yes   |                                                      |
+| 3  | Front       | Sign In page   | Not filling in username and/or password details and clicking "sign in" button | Returns an error message                                               | Yes   |                                                      |
+| 4  | Front       | Sign In page   | Entering incorrect details and clicking "sign in" button                      | Returns an error message                                               | Yes   |                                                      |
+| 5  | Front       | Sign In page   | Entering correct details and clicking "sign in" button                        | Log in successful, link to "Home" feed                                 | Yes   |                                                      |
+| 6  | Front       | NavBar         | Clicking Add Post button                                                      | Links to "Add Post" page                                               | Yes   |                                                      |
+| 7  | Front       | NavBar         | Clicking Supported button                                                     | Links to "Supported" page                                              | Yes   |                                                      |
+| 8  | Front       | NavBar         | Clicking Likes button                                                         | Links to "Likes" page                                                  | Yes   |                                                      |
+| 9  | Front       | NavBar         | Clicking Profile picture or username buttons                                  | Links to users "Profile" page                                          | Yes   |                                                      |
+| 10 | Front       | NavBar         | Clicking "sign out" icon                                                      | Logs out user/links to "sign up" page                                  | No    | User remains in home feed though they cannot comment |
+| 11 | Front       | Add Post       | Not entering a title or a content and then clicking create                    | Returns an error message                                               | Yes   |                                                      |
+| 12 | Front       | Add Post       | Not entering a title or a content and then clicking clear                     | Returns to previous page                                               | Yes   |                                                      |
+| 13 | Front       | Add Post       | Choosing too large a size file                                                | Returns an error message                                               | Yes   |                                                      |
+| 14 | Front       | Add Post       | Adding correct details in post and pressing "create"                          | Creates post/ user links to feed                                       | Yes   |                                                      |
+| 15 | Front       | Add Post       | After posting, avatar image, title, content are all shown                     | Avatar image, title, content created                                   | No    | Avatar image is not shown                            |
+| 16 | Front       | Feed           | Click on users avatar under "Most followed profiles"                          | Links to user's profile page                                           | Yes   |                                                      |
+| 17 | Front       | Feed           | Click on follow a profile                                                     | Button changes to unfollow<br>User's profile adds 1 to "following"     | Yes   |                                                      |
+| 18 | Front       | Feed           | Click to unfollow a profile                                                   | Button changes to follow<br>User's profile reduces by 1 to "following" | Yes   |                                                      |
+| 19 | Front       | Feed           | Click on another user's post's avatar                                         | Takes user to the other urer's profile                                 | Yes   |                                                      |
+| 20 | Front       | Feed           | Click on another user's post's name, image or content of post                 | Take user to post                                                      | Yes   |                                                      |
+| 21 | Front       | Feed           | Click on ball (like)                                                          | Adds 1 to the number of likes for that post                            | Yes   |                                                      |
+| 22 | Front       | Feed           | Click on ball (like) again                                                    | Takes away 1 to the number of likes for that post                      | Yes   |                                                      |
+| 23 | Front       | Feed           | Click on speech bubble (comment)                                              | Opens post and comment content                                         | Yes   |                                                      |
+| 24 | Front       | Feed           | User can delete own posts                                                     | "Three dots" are visible                                               | No    | Option to edit or delete post not available          |
+| 25 | Front       | Feed           | Scroll down                                                                   | Infinite feed activates and user can scroll to bottom                  | Yes   |                                                      |
+| 26 | Front       | Profile        | On opening profile                                                            | User can see all his posts and user stats                              | Yes   |                                                      |
+| 27 | Front       | Profile        | User can delete own posts                                                     | "Three dots" are visible                                               | No    | Option to edit or delete post not available          |
+| 28 | Front       | Profile        | User can edit profile info                                                    | Clicking on edit profile links to edit profile page                    | Yes   |                                                      |
+| 29 | Front       | Profile        | User can change username                                                      | Clicking on edit profile links to edit username page                   | Yes   |                                                      |
+| 30 | Front       | Profile        | User can change password                                                      | Clicking on edit profile links to edit password page                   | Yes   |                                                      |
+| 31 | Front       | Home Feed      | User can see all posts                                                        | All posts should be available to the user                              | Yes   |                                                      |
+| 32 | Front       | Supported Feed | User can see posts of supported teams                                         | Only those posts should be shown                                       | No    | All posts are shown                                  |
+| 33 | Front       | Liked Feed     | User can see posts that he has liked or commented on                          | Only those posts should be shown                                       | No    | All posts are shown                                  |
 
 Backend tests that were run include:
 
@@ -428,6 +461,37 @@ Backend tests that were run include:
 - Test if user can see a post with an invalid id
 - User can see own posts
 - User cannot update a post that isn't their own
+  
+And also the localhost: 8000 (API for DRF), was checked for the following things:
+
+- Posts, Profiles, Users, contain correct information against the models.py file
+- Profiles were created correctly
+- Posts were created correctly
+
+
+#### 4.2 Version Control: Usage of Git and Githug for version control, incl explanation of commit messages
+
+#### 4.3 Remaining errors after testing
+
+There are a few errors and bugs remaining:
+
+- The profile avatar is not connecting in posts and show only a broken image icon
+- On logging out, the home feed is still shown. Users cannot however comment on posts
+- Automatic tests were not added to all functions
+- Error messages are the default messages
+
+Testing results:
+
+|    | Back/Front? | Area           | Test                                                      | Expected Result                       | Pass? | Notes                                                |
+| -- | ----------- | -------------- | --------------------------------------------------------- | ------------------------------------- | ----- | ---------------------------------------------------- |
+| 10 | Front       | NavBar         | Clicking "sign out" icon                                  | Logs out user/links to "sign up" page | No    | User remains in home feed though they cannot comment |
+| 15 | Front       | Add Post       | After posting, avatar image, title, content are all shown | Avatar image, title, content created  | No    | Avatar image is not shown                            |
+| 24 | Front       | Feed           | User can delete own posts                                 | "Three dots" are visible              | No    | Option to edit or delete post not available          |
+| 27 | Front       | Profile        | User can delete own posts                                 | "Three dots" are visible              | No    | Option to edit or delete post not available          |
+| 32 | Front       | Supported Feed | User can see posts of supported teams                     | Only those posts should be shown      | No    | All posts are shown                                  |
+| 33 | Front       | Liked Feed     | User can see posts that he has liked or commented on      | Only those posts should be shown      | No    | All posts are shown                                  |
+
+#### 4.4 Other issues and information
 
 **Test Profiles**
 
@@ -443,6 +507,7 @@ Users
 - TaraTaylor / TaraPassword1
 - Sam / SamPassword
 - Sally / SallyPassword
+- 
 
 ---
 
