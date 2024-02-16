@@ -450,7 +450,7 @@ I have tried to follow the guidelines as explained in this simple table from [Re
 | 30 | Front       | Profile        | User can change password                                                      | Clicking on edit profile links to edit password page                   | Yes   |                                                      |
 | 31 | Front       | Home Feed      | User can see all posts                                                        | All posts should be available to the user                              | Yes   |                                                      |
 | 32 | Front       | Supported Feed | User can see posts of supported teams                                         | Only those posts should be shown                                       | No    | All posts are shown                                  |
-| 33 | Front       | Liked Feed     | User can see posts that he has liked or commented on                          | Only those posts should be shown                                       | No    | All posts are shown                                  |
+| 33 | Front       | Liked Feed     | User can see posts that he has liked or commented on                          | Only those posts should be shown                                       | Yes    |                                                     |
 
 Backend tests that were run include:
 
@@ -488,8 +488,7 @@ Testing results:
 | 15 | Front       | Add Post       | After posting, avatar image, title, content are all shown | Avatar image, title, content created  | No    | Avatar image is not shown                            |
 | 24 | Front       | Feed           | User can delete own posts                                 | "Three dots" are visible              | No    | Option to edit or delete post not available          |
 | 27 | Front       | Profile        | User can delete own posts                                 | "Three dots" are visible              | No    | Option to edit or delete post not available          |
-| 32 | Front       | Supported Feed | User can see posts of supported teams                     | Only those posts should be shown      | No    | All posts are shown                                  |
-| 33 | Front       | Liked Feed     | User can see posts that he has liked or commented on      | Only those posts should be shown      | No    | All posts are shown                                  |
+| 32 | Front       | Supported Feed | User can see posts of supported teams                     | Only those posts should be shown      | No    | All posts are shown                                  |                              |
 
 #### 4.4 Other issues and information
 
