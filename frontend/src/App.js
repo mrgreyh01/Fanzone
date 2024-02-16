@@ -19,7 +19,7 @@ import PageNotFound from "./components/PageNotFound";
 function App() {
   const currentUser = useCurrentUser();
   const profile_id = currentUser?.profile_id || "";
-  const team_name = '';//currentUser?.supported_team;
+  const team_name = currentUser?.supported_team;
 
   return (
     <div className={styles.App}>
